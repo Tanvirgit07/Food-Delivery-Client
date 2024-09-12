@@ -1,16 +1,15 @@
-import  { useRef } from 'react';
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { useRef } from "react";
 
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+import { Swiper, SwiperSlide } from "swiper/react";
 
-import './Carousel.css';
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+import "./Carousel.css";
 
 // import required modules
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 const DemoCarousel = () => {
   const progressCircle = useRef(null);
@@ -18,7 +17,7 @@ const DemoCarousel = () => {
 
   const onAutoplayTimeLeft = (s, time, progress) => {
     if (progressCircle.current) {
-      progressCircle.current.style.setProperty('--progress', 1 - progress);
+      progressCircle.current.style.setProperty("--progress", 1 - progress);
     }
     if (progressContent.current) {
       progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
@@ -26,7 +25,7 @@ const DemoCarousel = () => {
   };
 
   return (
-    <div className='w-full h-[82vh] mt-7'>
+    <div className="w-full h-[82vh] mt-7">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -43,31 +42,232 @@ const DemoCarousel = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src="https://i.ibb.co.com/1QJ1GB7/eat-2834549-640.jpg" alt="" />
+          {/* <img src="https://i.ibb.co.com/1QJ1GB7/eat-2834549-640.jpg" alt="" /> */}
+          <div
+            className="hero min-h-screen"
+            style={{
+              backgroundImage:
+                "url(https://i.ibb.co.com/1QJ1GB7/eat-2834549-640.jpg)",
+            }}
+          >
+            <div className="hero-overlay bg-opacity-40"></div>
+            <div className="text-neutral-content">
+              <div className="text-start ml-10">
+                <h1 className="mb-5 text-5xl font-bold text-orange-500">Hello there.....</h1>
+                <p className="mb-5 w-6/12">
+                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                  assumenda excepturi exercitationem quasi. In deleniti eaque
+                  aut repudiandae et a id nisi.
+                </p>
+                <button className="btn btn-outline btn-secondary btn-sm rounded-full">View Menu</button>
+              </div>
+            </div>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://i.ibb.co.com/5BtF0FV/car-6.jpg" alt="" />
+          {/* <img src="https://i.ibb.co.com/5BtF0FV/car-6.jpg" alt="" /> */}
+          <div
+            className="hero min-h-screen"
+            style={{
+              backgroundImage:
+                "url(https://i.ibb.co.com/1QJ1GB7/eat-2834549-640.jpg)",
+            }}
+          >
+            <div className="hero-overlay bg-opacity-40"></div>
+            <div className="text-neutral-content">
+              <div className="text-start ml-10">
+                <h1 className="mb-5 text-5xl font-bold text-orange-500">Hello there.....</h1>
+                <p className="mb-5 w-6/12">
+                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                  assumenda excepturi exercitationem quasi. In deleniti eaque
+                  aut repudiandae et a id nisi.
+                </p>
+                <button className="btn btn-outline btn-secondary btn-sm rounded-full">View Menu</button>
+              </div>
+            </div>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://i.ibb.co.com/RycBzwz/pexels-chanwalrus-958545.jpg" alt="" />
+          {/* <img
+            src="https://i.ibb.co.com/RycBzwz/pexels-chanwalrus-958545.jpg"
+            alt=""
+          /> */}
+          <div
+            className="hero min-h-screen"
+            style={{
+              backgroundImage:
+                "url(https://i.ibb.co.com/1QJ1GB7/eat-2834549-640.jpg)",
+            }}
+          >
+            <div className="hero-overlay bg-opacity-40"></div>
+            <div className="text-neutral-content">
+              <div className="text-start ml-10">
+                <h1 className="mb-5 text-5xl font-bold text-orange-500">Hello there.....</h1>
+                <p className="mb-5 w-6/12">
+                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                  assumenda excepturi exercitationem quasi. In deleniti eaque
+                  aut repudiandae et a id nisi.
+                </p>
+                <button className="btn btn-outline btn-secondary btn-sm rounded-full">View Menu</button>
+              </div>
+            </div>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://i.ibb.co.com/RycBzwz/pexels-chanwalrus-958545.jpg" alt="" />
+          {/* <img
+            src="https://i.ibb.co.com/RycBzwz/pexels-chanwalrus-958545.jpg"
+            alt=""
+          /> */}
+          <div
+            className="hero min-h-screen"
+            style={{
+              backgroundImage:
+                "url(https://i.ibb.co.com/1QJ1GB7/eat-2834549-640.jpg)",
+            }}
+          >
+            <div className="hero-overlay bg-opacity-40"></div>
+            <div className="text-neutral-content">
+              <div className="text-start ml-10">
+                <h1 className="mb-5 text-5xl font-bold text-orange-500">Hello there.....</h1>
+                <p className="mb-5 w-6/12">
+                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                  assumenda excepturi exercitationem quasi. In deleniti eaque
+                  aut repudiandae et a id nisi.
+                </p>
+                <button className="btn btn-outline btn-secondary btn-sm rounded-full">View Menu</button>
+              </div>
+            </div>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://i.ibb.co.com/RycBzwz/pexels-chanwalrus-958545.jpg" alt="" />
+          {/* <img
+            src="https://i.ibb.co.com/RycBzwz/pexels-chanwalrus-958545.jpg"
+            alt=""
+          /> */}
+          <div
+            className="hero min-h-screen"
+            style={{
+              backgroundImage:
+                "url(https://i.ibb.co.com/1QJ1GB7/eat-2834549-640.jpg)",
+            }}
+          >
+            <div className="hero-overlay bg-opacity-40"></div>
+            <div className="text-neutral-content">
+              <div className="text-start ml-10">
+                <h1 className="mb-5 text-5xl font-bold text-orange-500">Hello there.....</h1>
+                <p className="mb-5 w-6/12">
+                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                  assumenda excepturi exercitationem quasi. In deleniti eaque
+                  aut repudiandae et a id nisi.
+                </p>
+                <button className="btn btn-outline btn-secondary btn-sm rounded-full">View Menu</button>
+              </div>
+            </div>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://i.ibb.co.com/RycBzwz/pexels-chanwalrus-958545.jpg" alt="" />
+          {/* <img
+            src="https://i.ibb.co.com/RycBzwz/pexels-chanwalrus-958545.jpg"
+            alt=""
+          /> */}
+          <div
+            className="hero min-h-screen"
+            style={{
+              backgroundImage:
+                "url(https://i.ibb.co.com/1QJ1GB7/eat-2834549-640.jpg)",
+            }}
+          >
+            <div className="hero-overlay bg-opacity-40"></div>
+            <div className="text-neutral-content">
+              <div className="text-start ml-10">
+                <h1 className="mb-5 text-5xl font-bold text-orange-500">Hello there.....</h1>
+                <p className="mb-5 w-6/12">
+                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                  assumenda excepturi exercitationem quasi. In deleniti eaque
+                  aut repudiandae et a id nisi.
+                </p>
+                <button className="btn btn-outline btn-secondary btn-sm rounded-full">View Menu</button>
+              </div>
+            </div>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://i.ibb.co.com/RycBzwz/pexels-chanwalrus-958545.jpg" alt="" />
+          {/* <img
+            src="https://i.ibb.co.com/RycBzwz/pexels-chanwalrus-958545.jpg"
+            alt=""
+          /> */}
+          <div
+            className="hero min-h-screen"
+            style={{
+              backgroundImage:
+                "url(https://i.ibb.co.com/1QJ1GB7/eat-2834549-640.jpg)",
+            }}
+          >
+            <div className="hero-overlay bg-opacity-40"></div>
+            <div className="text-neutral-content">
+              <div className="text-start ml-10">
+                <h1 className="mb-5 text-5xl font-bold text-orange-500">Hello there.....</h1>
+                <p className="mb-5 w-6/12">
+                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                  assumenda excepturi exercitationem quasi. In deleniti eaque
+                  aut repudiandae et a id nisi.
+                </p>
+                <button className="btn btn-outline btn-secondary btn-sm rounded-full">View Menu</button>
+              </div>
+            </div>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://i.ibb.co.com/RycBzwz/pexels-chanwalrus-958545.jpg" alt="" />
+          {/* <img
+            src="https://i.ibb.co.com/RycBzwz/pexels-chanwalrus-958545.jpg"
+            alt=""
+          /> */}
+          <div
+            className="hero min-h-screen"
+            style={{
+              backgroundImage:
+                "url(https://i.ibb.co.com/1QJ1GB7/eat-2834549-640.jpg)",
+            }}
+          >
+            <div className="hero-overlay bg-opacity-40"></div>
+            <div className="text-neutral-content">
+              <div className="text-start ml-10">
+                <h1 className="mb-5 text-5xl font-bold text-orange-500">Hello there.....</h1>
+                <p className="mb-5 w-6/12">
+                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                  assumenda excepturi exercitationem quasi. In deleniti eaque
+                  aut repudiandae et a id nisi.
+                </p>
+                <button className="btn btn-outline btn-secondary btn-sm rounded-full">View Menu</button>
+              </div>
+            </div>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://i.ibb.co.com/RycBzwz/pexels-chanwalrus-958545.jpg" alt="" />
+          {/* <img
+            src="https://i.ibb.co.com/RycBzwz/pexels-chanwalrus-958545.jpg"
+            alt=""
+          /> */}
+          <div
+            className="hero min-h-screen"
+            style={{
+              backgroundImage:
+                "url(https://i.ibb.co.com/1QJ1GB7/eat-2834549-640.jpg)",
+            }}
+          >
+            <div className="hero-overlay bg-opacity-40"></div>
+            <div className="text-neutral-content">
+              <div className="text-start ml-10">
+                <h1 className="mb-5 text-5xl font-bold text-orange-500">Hello there.....</h1>
+                <p className="mb-5 w-6/12">
+                  Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                  assumenda excepturi exercitationem quasi. In deleniti eaque
+                  aut repudiandae et a id nisi.
+                </p>
+                <button className="btn btn-outline btn-secondary btn-sm rounded-full">View Menu</button>
+              </div>
+            </div>
+          </div>
         </SwiperSlide>
         <div className="autoplay-progress" slot="container-end">
           <svg viewBox="0 0 48 48" ref={progressCircle}>
